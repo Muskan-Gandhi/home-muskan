@@ -1,2 +1,21 @@
-<p>header works!</p>
-<app-timer ()></app-timer>
+<h3>Total items in cart {{ counter }}</h3>
+<div class="card mb-3" style="width: 100%;height: 120px;" *ngFor="let cartItem of cartItems">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="cartItem.imageurl" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h4 class="card-title">{{ cartItem.productname}}</h4>
+          <h5 class="card-title">{{ cartItem.quntityavailable}}</h5>
+          <h5 class="card-title">{{ cartItem.price}}/-</h5>
+          <p class="card-text"></p>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<app-product (productemmiter)="cart($event)"></app-product>
+

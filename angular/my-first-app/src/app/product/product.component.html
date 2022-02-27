@@ -1,2 +1,18 @@
 <p>product works!</p>
-<button (click)="addtocart()">Add to cart</button>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let product of products">
+            <div class="card" style="width: 18rem;">
+                <h5 class="card-title" ><img [src]="product.imageurl"></h5>
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.productname}}</h5>
+                    <h5 class="card-title">{{ product.price}} /- </h5>
+                    <h5 class="card-title">{{ product.quntityavailable}}</h5>
+                    <p class="card-text">
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary" (click)="addtocart(product)">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

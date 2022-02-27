@@ -11,7 +11,17 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  // @Input() item = "";
-
+  counter = 0;
+cartItems=[{
+  "id":"",
+  "productname":"",
+  "price":"",
+  "quntityavailable":"",
+  "imageurl":""
+}]
+ 
+cart(product:any){
+this.cartItems.push(product);
+this.counter++;
+}
 }

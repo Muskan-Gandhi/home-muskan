@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-app';
-  sentItem = "John";
-  count=0;
-  increment(){
-    this.count++; 
-  }
+
+  
 }
