@@ -16,4 +16,7 @@ export class HttpDataRequestService {
   sendPost(data:any){
     return this.ht.post(this.url,data);
   }
+  updatePost(){
+    
+  }
 }
