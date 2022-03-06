@@ -12,4 +12,6 @@ export class DateTimeService {
     this.today=new Date();
     return this.today;
   }
+
+  increment=0;
 }

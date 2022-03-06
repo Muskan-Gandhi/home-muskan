@@ -9,6 +9,8 @@ import { DateTimeService } from './date-time.service';
 export class AppComponent {
   title = 'my-first-app';
 
-  constructor(private dt:DateTimeService){}
+  constructor(public dt:DateTimeService){}
   day=this.dt.getdatetime();
+
+
 }
