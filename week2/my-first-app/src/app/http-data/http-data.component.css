@@ -1,0 +1,9 @@
+form{
+    border: 2px solid burlywood;
+    margin-left:30% ;
+    margin-right:30%;
+    padding: 20px;
+}
+input{
+    margin: 10px;
+}
