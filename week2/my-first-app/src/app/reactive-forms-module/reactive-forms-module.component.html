@@ -1,0 +1,34 @@
+<!-- <p>reactive-forms-module works!</p> -->
+<div class="container">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <div>
+            <label>Firstname : </label>
+            <input formControlName="firstname">
+        </div>
+        <div>
+            <label>Lastname : </label>
+            <input formControlName="lastname">
+        </div>
+        <div>
+            <label>Email : </label>
+            <input formControlName="email">
+        </div>
+        <div>
+            <label>City : </label>
+            <input formControlName="city">
+        </div>
+        <div>
+            <label>Contact : </label>
+            <input formControlName="contact">
+        </div>
+        <div>
+            <label>To: </label>
+            <input type="date" formControlName="todate">
+        </div>
+        <div>
+            <label>From : </label>
+            <input type="date" formControlName="fromdate">
+        </div>
+        <button class="btn btn-primary" type="submit" [disabled]="myForm.valid">Submit</button>
+    </form>
+</div>
